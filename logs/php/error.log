@@ -1,3 +1,21 @@
 [06-Jul-2022 10:15:22 UTC] PHP Parse error:  syntax error, unexpected '$name' (T_VARIABLE), expecting ';' or ',' in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\experiment.php on line 2
 [08-Jul-2022 01:04:54 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-content\themes\kirkynaj-university-theme\functions.php on line 6
 [15-Jul-2022 23:17:31 UTC] PHP Parse error:  syntax error, unexpected ''public'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-content\mu-plugins\university_post_types.php on line 7
+[19-Jul-2022 23:08:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function add_rewrite_tag() on null in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\rewrite.php:176
+Stack trace:
+#0 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\class-wp-post-type.php(644): add_rewrite_tag('%event%', '([^/]+)', 'event=')
+#1 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\post.php(1693): WP_Post_Type->add_rewrite_rules()
+#2 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-content\mu-plugins\university_post_types.php(26): register_post_type('event', Array)
+#3 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-settings.php(353): include_once('C:\\Users\\KVG\\Lo...')
+#4 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-config.php(91): require_once('C:\\Users\\KVG\\Lo...')
+#5 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-load.php(50): require_once('C:\\Users\\KVG\\Lo...')
+#6 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-admin\admin.php(34): require_once('C:\\Users\ in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\rewrite.php on line 176
+[19-Jul-2022 23:10:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function add_rewrite_tag() on null in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\rewrite.php:176
+Stack trace:
+#0 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\class-wp-post-type.php(644): add_rewrite_tag('%event%', '([^/]+)', 'event=')
+#1 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\post.php(1693): WP_Post_Type->add_rewrite_rules()
+#2 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-content\mu-plugins\university_post_types.php(26): register_post_type('event', Array)
+#3 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-settings.php(353): include_once('C:\\Users\\KVG\\Lo...')
+#4 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-config.php(91): require_once('C:\\Users\\KVG\\Lo...')
+#5 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-load.php(50): require_once('C:\\Users\\KVG\\Lo...')
+#6 C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-admin\admin.php(34): require_once('C:\\Users\ in C:\Users\KVG\Local Sites\kirkynajlocalsite\app\public\wp-includes\rewrite.php on line 176
