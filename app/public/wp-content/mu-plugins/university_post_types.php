@@ -1,15 +1,16 @@
 
 <?php
-//Event Post Type
+
 function university_post_types() {
+    //Event Post Type
     register_post_type( 'event', array(
         'show_in_rest' => true,
         'supports' => array('title', 'editor', 'excerpt'),
-        'rewrite' => array('slug' => 'events'),
+        'rewrite' => array('slug' => 'events'), //for url
         'has_archive' => true,
         'public' => true,
-        'show_in_rest' => true,
-        'labels' => array(
+       // 'show_in_rest' => true,
+        'labels' => array(            //Diplaying event title
             'name' => 'Events',
             'add_new_item' => 'Add New Event',
             'edit_item' => 'Edit Event',
@@ -19,14 +20,13 @@ function university_post_types() {
         'menu_icon' => 'dashicons-calendar'
     ) );
 
-        //Program Post Type
+    //Program Post Type
     register_post_type( 'program', array(
         'show_in_rest' => true,
         'supports' => array('title', 'editor'),
         'rewrite' => array('slug' => 'programs'),
         'has_archive' => true,
         'public' => true,
-        'show_in_rest' => true,
         'labels' => array(
             'name' => 'Programs',
             'add_new_item' => 'Add New Program',
@@ -34,9 +34,23 @@ function university_post_types() {
             'all_items' => 'All Programs',
             'singular_name' => 'Program'
         ),
-        'menu_icon' => 'dashicons-awards'
+        'menu_icon' => 'dashicons-welcome-learn-more'
     ) );
     
+    //Professor Post Type
+    register_post_type( 'professor', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'public' => true,
+        'labels' => array(
+            'name' => 'Professors',
+            'add_new_item' => 'Add New Professor',
+            'edit_item' => 'Edit Professor',
+            'all_items' => 'All Professors',
+            'singular_name' => 'Professor'
+        ),
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+    ) );
 }
 
 add_action('init', 'university_post_types');

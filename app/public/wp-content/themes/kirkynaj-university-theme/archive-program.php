@@ -13,7 +13,7 @@
   </div>
 
   <div class="container container--narrow page-section">
-    <ul>
+    <ul class="link-list min-list">
       <?php 
       while(have_posts()) {
         the_post(); ?>
